@@ -1,11 +1,11 @@
-/* General Styling */
+
 body {
-    font-family: 'Poppins', sans-serif; /* Ganti dengan font yang sesuai */
+    font-family: 'Poppins', sans-serif; 
     line-height: 1.6;
     color: #333;
 }
 
-/* Navbar Customization */
+
 #mainNavbar {
     transition: background-color 0.3s ease;
 }
@@ -15,25 +15,25 @@ body {
 }
 #mainNavbar .navbar-brand {
     font-weight: bold;
-    color: #000; /* Warna teks brand */
+    color: #000; 
 }
 #mainNavbar .nav-link {
-    color: #555; /* Warna teks nav link */
+    color: #555; 
     transition: color 0.3s ease;
 }
 #mainNavbar .nav-link:hover {
-    color: #007bff; /* Warna hover nav link */
+    color: #007bff; 
 }
 .navbar-brand img {
     margin-right: 10px;
 }
 
-/* Hero Section Customization */
+
 .hero-section {
     position: relative;
     color: white;
-    min-height: 100vh; /* Pastikan hero section setinggi viewport */
-    background-color: #333; /* Warna fallback */
+    min-height: 100vh; 
+    background-color: #333; 
     background-image: url('https://e1.pxfuel.com/desktop-wallpaper/712/128/desktop-wallpaper-pin-oleh-jxmchan-di-%25EC%2597%2594%25EC%258B%259C%25ED%258B%25B0-nct-dream-2021.jpg'); /* Gambar NCT Dream */
     background-position: center;
     background-repeat: no-repeat;
@@ -43,7 +43,7 @@ body {
     justify-content: center;
 }
 
-/* Overlay untuk Hero Section agar teks lebih mudah dibaca */
+
 .hero-section::before {
     content: "";
     position: absolute;
@@ -51,19 +51,19 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Overlay hitam transparan */
+    background-color: rgba(0, 0, 0, 0.5); 
     z-index: 0;
 }
 .hero-section .container {
     position: relative;
-    z-index: 1; /* Pastikan konten di atas overlay */
+    z-index: 1; 
 }
 .hero-section h1 {
     font-size: 3.5rem;
     font-weight: 700;
 }
 .hero-section .btn-success {
-    background-color: #00a87a; /* Warna hijau khas NCT */
+    background-color: #00a87a; 
     border-color: #00a87a;
 }
 .hero-section .btn-success:hover {
@@ -75,12 +75,12 @@ body {
     transition: color 0.3s ease;
 }
 .hero-section .social-icons a:hover {
-    color: #00a87a; /* Warna hijau khas NCT */
+    color: #00a87a; 
 }
 
-/* Features Section Customization */
+
 .bg-light-green {
-    background-color: #f0f7f4; /* Warna hijau muda untuk background */
+    background-color: #f0f7f4; 
 }
 .feature-box {
     border: 1px solid #e0e7e1;
@@ -91,24 +91,24 @@ body {
     box-shadow: 0 8px 16px rgba(0,0,0,0.1);
 }
 .feature-box i {
-    color: #00a87a; /* Ikon warna hijau NCT */
+    color: #00a87a; 
 }
 
-/* Testimonials Section Customization */
+
 .card-img-top {
     object-fit: cover;
-    border: 3px solid #00a87a; /* Border hijau pada foto anggota */
+    border: 3px solid #00a87a; 
 }
 .blockquote-footer {
     color: #6c757d;
 }
 
-/* Call to Action / Community Section Customization */
+
 .bg-light-gray {
     background-color: #f8f9fa;
 }
 .btn-primary {
-    background-color: #007bff; /* Bisa diganti warna NCT */
+    background-color: #007bff; 
     border-color: #007bff;
 }
 .btn-primary:hover {
@@ -116,14 +116,53 @@ body {
     border-color: #0056b3;
 }
 
-/* Footer Customization */
+
 footer {
-    background-color: #222; /* Warna footer lebih gelap */
+    background-color: #222; 
 }
 footer a {
     text-decoration: none;
     color: #bbb;
 }
 footer a:hover {
+    color: #fff;
+}
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode #mainNavbar {
+    background-color: #1c1c1c !important;
+}
+body.dark-mode #mainNavbar .navbar-brand {
+    color: #fff;
+}
+body.dark-mode #mainNavbar .nav-link {
+    color: #ddd;
+}
+body.dark-mode #mainNavbar .nav-link:hover {
+    color: #00a87a;
+}
+
+body.dark-mode .feature-box {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border-color: #333;
+}
+body.dark-mode .bg-light-green {
+    background-color: #1a1a1a;
+}
+body.dark-mode .bg-light-gray {
+    background-color: #2a2a2a;
+}
+
+body.dark-mode footer {
+    background-color: #000 !important;
+}
+body.dark-mode footer a {
+    color: #aaa;
+}
+body.dark-mode footer a:hover {
     color: #fff;
 }
